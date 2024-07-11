@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일본 여행 가이드</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-size: 24px; /* 폰트 사이즈 조정 */
+      font-weight: bold; /* 폰트 굵기 조정 */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color: #f8f9fa !important;
+    }
+    .bg-primary {
+      background-color: #007bff !important;
+      color: white;
+    }
+    .bg-secondary {
+      background-color: #6c757d !important;
+      color: white;
+    }
+    .bg-success {
+      background-color: #28a745 !important;
+      color: white;
+    }
+    .bg-info {
+      background-color: #17a2b8 !important;
+      color: white;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .carousel-inner img,
+    .attraction-item img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-details {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 내비게이션 바 - 항목을 변경하거나 추가할 수 있습니다 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">세부 여행 가이드 - 10321 추정원</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#overview">개요</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">역사</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#attractions">관광지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">여행 팁</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 개요 섹션 -->
+  <section id="overview" class="section bg-primary">
+    <div class="container">
+      <h2 class="text-center">개요</h2>
+      <p>세부는 아름다운 관광지가 도처에 널려서, 배낭여행이나 호핑투어에 적합하고, 규모는 거대하지 않으나 적당한 정도로 즐길 수 있을 정도의 밤문화가 준비되어 있다는 것이다.</p>
+      <!-- 이미지 슬라이드 - 이미지를 변경하려면 src 속성 값을 수정하세요 -->
+      <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/cebu.jpg" class="d-block w-100" alt="일본 개요 1">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/cebu2.jpg" class="d-block w-100" alt="일본 개요 2">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/cebu3.jpg" class="d-block w-100" alt="일본 개요 3">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/cebu4.jpg" class="d-block w-100" alt="일본 개요 4">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/cebu5.jpg" class="d-block w-100" alt="일본 개요 5">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">이전</span>
+        </a>
+        <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">다음</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 역사 섹션 -->
+  <section id="history" class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">역사</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/cebu h1.jpg" alt="일본 역사 1" class="img-fluid">
+            <p>세부 역사 1번째에 대한 간단한 설명입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/cebu h2.jpg" alt="일본 역사 2" class="img-fluid">
+            <p>세부 역사 2번째에 대한 간단한 설명입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/cebu h3.jpg" alt="일본 역사 3" class="img-fluid">
+            <p>세부 역사 3번째에 대한 간단한 설명입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 역사 1 -->
+  <div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel1">역사 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/cebu h1.jpg" alt="일본 역사 1" class="img-fluid">
+          <p>세부는 스페인의 식민지 이전부터 항구 도시였다. 중국(명) 외에 동남 아시아의 여러 나라와 거래를 하고 있었으며 이때 이슬람교도 전해졌다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 2 -->
+  <div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel2">역사 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/cebu h2.jpg" alt="일본 역사 2" class="img-fluid">
+          <p>1521년 4월 7일, 페르디난드 마젤란이 세부에 도착했다. 그는 세부의 영주였던 라자 후마본 (Rajah Humabon)을 회유했다.
+		  라자 후마본과 왕비, 주민들은 그 해 4월 14일 세례를 받고 처음 필리핀 기독교인이 되었다. 
+		  마젤란은 지방 영주 간의 싸움에 개입하여 기독교로 개종시켰지만, 이 섬을 스페인 영토로 선언할 수 없었다. 
+		  4월 27일 막탄섬에서 마젤란을 따르지 않았던 라푸라푸가 이끄는 군대와의 전투가 일어나 전사했기 때문이다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 3 -->
+  <div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel3">역사 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/cebu h3.jpg" alt="일본 역사 3" class="img-fluid">
+          <p>1565년 4월 27일, 정복자 미겔 로페스 데 레가스피는 병사들과 성 아우구스치노 수도회 및 프란시스코 회로부터의 수도사와 함께 상륙해, 
+		  라자 후마본 왕의 아들, 라자 투 파스왕의 마을을 공격하여 점령하여 필리핀 식민지화의 최초의 발판을 쌓아 올렸다. 
+		  마젤란이 산 미구엘로 개명한 세부의 마을은 레가스피에 의해서 비야 델 산티시모 논브레 데 헤스스(Villa del Santisimo Nombre de Jess)라고 다시 개명되어 마닐라가 식민지화 될 때까지의 6년간,
+		  세부 시는 새로운 스페인 식민지의 수도가 되었다. 
+		  그들은 이 해안에 멕시코와의 무역이나 현지인과의 전쟁에 대비한 항구 요새인 산 페드로 요새를 건설했고, 
+		  이것은 지금도 세부 시의 해안에 남아 있다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 관광지 섹션 -->
+  <section id="attractions" class="section bg-success">
+    <div class="container">
+      <h2 class="text-center">세부 관광지</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/cebu g1.jpg" alt="일본 관광지 1" class="img-fluid">
+            <p>세부 관광지 1번째 산토니뇨 성당에 대한 간단한 설명입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/cebu g2.jpg" alt="일본 관광지 2" class="img-fluid">
+            <p>세부 관광지 2번째 카와산 팔스에 대한 간단한 설명입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/cebu g3.jpg" alt="일본 관광지 3" class="img-fluid">
+            <p>세부 관광지 3번째 마젤란의 십자가에 대한 간단한 설명입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 관광지 1 -->
+  <div class="modal fade" id="attractionModal1" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel1">산토니뇨 성당</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/cebu g1.jpg" alt="일본 관광지 1" class="img-fluid">
+          <p>‘아기 예수‘를 의미하는 산토니뇨(Sto. Niño)상이 수호신으로 보관되어 있는 성당으로 1500년대 스페인 총독인 레가스피에 의해 건축되었습니다. 
+		  1941년 세계문화유산으로 등재되어 현지인뿐 아니라 많은 관광객이 방문하는 성당입니다. 
+		  성당 내부에는 종교적 유물을 전시해 놓은 박물관이 있으며, 외부에는 초를 피우고 기도를 할 수 있는 공간이 마련되어 있습니다.
+		  매년 1월에 개최되는 세부 최대의 축제인 시눌룩 축제의 장소이기도 합니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 2 -->
+  <div class="modal fade" id="attractionModal2" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel2">카와산 팔츠</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/cebu g2.jpg" alt="일본 관광지 2" class="img-fluid">
+          <p>가와산 폭포는 세부 섬의 정글에 위치한 산 샘에서 나오는 맑은 청록색 물이 3단계 폭포입니다. 
+		  폭포는 필리핀 세부의 바디안(Badian)에 있는 카와산 강(Kawasan River)의 일부입니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 3 -->
+  <div class="modal fade" id="attractionModal3" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel3">마젤란의 십자가</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/cebu g3.jpg" alt="일본 관광지 3" class="img-fluid">
+          <p>스페인의 탐험가 마젤란이 1521년에 만든 십자가가 보관되어 있는 곳으로, 
+		  마젤란의 십자가는 1521년 필리핀 최초로 그리스드교 세례를 받은 세부의 추장 라자 후마본과 그 일족의 세례식을 기념하기 위해 제작되었습니다.
+		  마젤란의 십자가가 보관되어 있는 팔각정 천장에는 당시 세례를 받는 장면이 벽화로 그려져 있습니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 여행 팁 섹션 -->
+  <section id="tips" class="section bg-info">
+    <div class="container">
+      <h2 class="text-center">여행 팁</h2>
+      <ul>
+        <li>방문하기 좋은 시기: 봄 (4월~5월).</li>
+        <li>언어: 세부아노어(비사야어)가 메트로 세부의 가장 일반적인 언어이고, 교육 및 비즈니스 센터에서는 영어가 사용되고있습니다. 
+		또한 학교 등의 공공 교육기관에서는 국어로 타갈로그어를 배우기도 합니다.</li>
+        <li>통화: 필리핀의 통화 단위는 페소(PESO)이며, 필리핀어(필리피노어)로는 피소(PISO)로 표기됩니다. ISO가 지정한 통화 코드는 PHP이며, 기호로는 ₱ 를 사용합니다.</li>
+        <li>교통:지프니, 트라이시클, 버스, 택시, UV EXPRESS 등 크게 5가지가 있습니다.</li>
+      </ul>
+      <div class="text-center">
+        <!-- 여기에 YouTube 동영상 링크를 추가하세요 -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0OcOFlVR3_Q?si=rN9mwpQDNLFA8f4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2024 세부 여행 가이드. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
